@@ -1,0 +1,8 @@
+- name: Index
+  url: /
+- name: Posts
+  url: /posts
+- name: Tools
+  url: /tools
+- name: About
+  url: /about

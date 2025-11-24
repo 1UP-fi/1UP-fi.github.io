@@ -1,0 +1,20 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+    <head>{%- include head.html -%}</head>
+    <body>
+        <header>{%- include header.html -%}</header>
+        {% if page.class %}
+            <main class="{{ page.class }}">
+        {% else if layout.class %}
+            <main class="{{ layout.class }}">
+        {% else %}
+            <main>
+        {% endif %}
+            {{ content }}
+        </main>
+        <footer>{%- include footer.html -%}</footer>
+    </body>
+</html>

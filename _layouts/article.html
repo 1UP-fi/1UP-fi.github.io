@@ -1,0 +1,32 @@
+---
+layout: default
+styles:
+    - href: /css/article.css
+---
+{% assign author = site.data.authors[page.author] %}
+{% assign contents = content | remove_first: page.excerpt | split: '<div class="footnotes" role="doc-endnotes">' %}
+{% assign content = contents[0] %}
+{% assign footer = contents[1] | remove: '</div>' %}
+<article>
+    <header>
+        <h1>{{ page.title }}</h1>
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+            {{ page.date | date_to_string }}
+        </time>
+        &mdash;
+        <address style="display: inline;">
+            <a rel="author" href="{{ author.url }}">{{ page.author }}</a>
+        </address>
+        <p>
+            {{ page.excerpt }}
+        </p>
+    </header>
+    <nav>
+        <h2>Contents</h2>
+        <a href="#">(Top)</a>
+        {% include toc.html html=content ordered=true %}
+    </nav>
+    <main>{{ content }}</main>
+    <footer>{{ footer }}</footer>
+</article>
+

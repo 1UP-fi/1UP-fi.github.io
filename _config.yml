@@ -1,0 +1,72 @@
+title: 1UP.fi
+description: A kitchen sink for all my programming projects.
+url: https://1up.fi
+baseurl: /
+lang: en-US
+locale: en-US
+timezone: Europe/Helsinki
+logo: /logo.svg
+permalink: /:title
+
+collections:
+  posts:
+    permalink: /:collection/:title
+  feeds:
+    output: true
+    permalink: /:title
+  tools:
+    output: true
+    permalink: /:collection/:path
+  errors:
+    output: true
+    permalink: /:title
+  root:
+    output: true
+    permalink: /:title
+
+defaults:
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      layout: article
+      type: article
+      strip_title: true
+  - scope:
+      path: _feeds
+      type: feeds
+    values:
+      layout: feed
+  - scope:
+      path: _errors
+      type: errors
+    values:
+      layout: error
+      sitemap: false
+  - scope:
+      path: ''
+    values:
+      layout: default
+      author: 1UP
+      type: website
+      image: /logo.svg
+      author-url: /about#author
+
+plugins:
+  - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
+
+sass:
+  style: compressed
+
+titles_from_headings:
+  enabled:     true
+  collections: true 
+
+kramdown:
+  footnote_backlink: ^
+  footnote_template: "<footer class=\"footnotes\" role=\"doc-endnotes\">\n<ol>\n%s\n</ol>\n</footer>"
+  header_links: true

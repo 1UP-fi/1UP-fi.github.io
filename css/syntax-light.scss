@@ -1,0 +1,86 @@
+---
+---
+.highlight table td {
+    padding: 5px;
+}
+
+.highlight table pre {
+    margin: 0;
+}
+
+.highlight,.w {
+    color: var(--fg);
+}
+
+pre.highlight {
+    border: 0.2rem dotted #888;
+}
+
+.k,.kd,.kn,.kp,.kr,.kt,.kv {
+    color: #065;
+}
+
+.gr {
+    color: #EFF;
+}
+
+.gd {
+    color: #802;
+    background-color: #FEE;
+}
+
+.nb,.nc,.nn,.no {
+    color: #039;
+}
+
+.na,.nt,.sr {
+    color: #162;
+}
+
+.gi {
+    color: #162;
+    background-color: #DFD;
+}
+
+.ges {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bp,.il,.kc,.l,.ld,.m,.mb,.mf,.mh,.mi,.mo,.mx,.ne,.nl,.nv,.o,.ow,.py,.sb,.vc,.vg,.vi,.vm {
+    color: #05A;
+}
+
+.gh,.gu {
+    color: #05A;
+    font-weight: bold;
+}
+
+.dl,.s,.s1,.s2,.sa,.sc,.sd,.se,.sh,.ss,.sx {
+    color: #136;
+}
+
+.fm,.nd,.nf {
+    color: #399;
+}
+
+.err {
+    color: #EFF;
+    background-color: #802;
+}
+
+.c,.c1,.cd,.ch,.cm,.cp,.cpf,.cs,.gl,.gt {
+    color: #678;
+}
+
+.ge,.gs,.ni,.si {
+    color: #223;
+}
+
+.ge {
+    font-style: italic;
+}
+
+.gs {
+    font-weight: bold;
+}
