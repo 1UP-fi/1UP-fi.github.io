@@ -1,7 +1,7 @@
 title: 1UP.fi
 description: A kitchen sink for all my programming projects.
-url: https://1up.fi/
-baseurl: ''
+url: https://1up.fi
+baseurl: /
 lang: en-US
 locale: en-US
 timezone: Europe/Helsinki
