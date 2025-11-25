@@ -82,15 +82,15 @@ q {
 a {
     color: var(--accent);
 
-    :visited {
+    &:visited {
         color: var(--muted);
     }
 
-    :focus, :hover, .current {
+    &:focus, &:hover, &.current {
         text-decoration: underline;
     }
 
-    :active, .current {
+    &:active, &.current {
         font-weight: 700;
     }
 }
@@ -133,11 +133,11 @@ button {
     border: 0.1rem solid var(--accent);
     font-weight: bold;
 
-    :hover, :focus {
+    &:hover, &:focus {
         filter: brightness(80%);
     }
 
-    :active {
+    &:active {
         filter: brightness(60%);
     }
 }
@@ -149,10 +149,10 @@ hr {
 
 dt {
     font-weight: bold;
-}
 
-dt::after {
-    content: ": ";
+    &::after {
+        content: ": ";
+    }
 }
 
 .center {
