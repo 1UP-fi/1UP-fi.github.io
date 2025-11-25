@@ -5,7 +5,7 @@ styles:
     - href: /css/anim.css
       media: "(prefers-reduced-motion: no-preference)"
 ---
-![Logo](logo.svg){: style="height: 10rem; margin: auto;"}
+![Logo](logo.svg){: style="height: 8rem; margin: auto;"}
 
 # Welcome to 1UP.fi
 
