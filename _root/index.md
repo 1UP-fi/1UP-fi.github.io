@@ -9,7 +9,7 @@ styles:
 
 # Welcome to 1UP.fi
 
-Feel free to look around using the navigation at the top.<br>
+Feel free to look around using the navigation at the top.
 If it's your first time here the [About](/about) page may be a good place to start.
 {: style="margin-bottom: 0; text-wrap: balance"}
 
