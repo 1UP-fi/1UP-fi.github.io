@@ -11,7 +11,7 @@ styles:
 
 Feel free to look around using the navigation at the top.<br>
 If it's your first time here the [About](/about) page may be a good place to start.
-{: style="margin-bottom: 0"}
+{: style="margin-bottom: 0; text-wrap: balance"}
 
 {% for post in site.posts limit:1 %}
 ## Latest Post: 
