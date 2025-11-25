@@ -1,5 +1,6 @@
 ---
 title: "Index"
+permalink: /
 class: center
 styles:
     - href: /css/anim.css
