@@ -5,13 +5,7 @@
     To err is human.
     {% else %}
     <noscript>Keeping it static!</noscript>
-    <script>
-        let me = document.currentScript;
-        fetch("/splashes.txt").then(r=>r.text()).then(t=>{
-            t=t.split('\n').filter(s=>s!='');
-            me.outerHTML = t[Math.random()*t.length|0];
-        });
-    </script>
+    <script src="js/splash.js"></script>
     {% endif %}
 </q>
 <a rel="license" href="/about#license"><small>&copy; {{ 'now' | date: "%Y" }} 1UP.fi</small></a>
