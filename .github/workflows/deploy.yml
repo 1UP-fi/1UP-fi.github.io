@@ -30,10 +30,8 @@ jobs:
       - name: Build Jekyll
         uses: actions/jekyll-build-pages@v1
 
-      - name: Install deps and build
-        run: |
-          npm install
-          npm run build
+      - name: Compile Typescript
+        run: npx tsc
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
