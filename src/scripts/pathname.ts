@@ -1,3 +1,3 @@
 let c = document.createElement("code");
 c.textContent = window.location.pathname;
-document.currentScript.replaceWith(c);
+document.currentScript!.replaceWith(c);

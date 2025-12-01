@@ -1,0 +1,16 @@
+{
+    "name": "1up-fi",
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "build": "tsc; npm run minify-html; npm run minify-js",
+        "minify-html": "html-minifier-next --input-dir=_site --output-dir=_temp --config-file=html.config.json; cp -rf _temp/* _site; rm -rf _temp",
+        "minify-js": "for f in _site/**/*.js; do terser \"$f\" -c --source-map \"content='$f.map',url='$(basename \"$f.map\")'\" -o \"$f\"; done",
+        "dev": "bundle exec jekyll build; npm run build; bundle exec jekyll serve --skip-initial-build --no-watch"
+    },
+    "devDependencies": {
+        "html-minifier-next": "^4.6.1",
+        "terser": "^5.44.1",
+        "typescript": "^5.9.3"
+    }
+}

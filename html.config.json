@@ -1,0 +1,7 @@
+{
+  "collapseWhitespace": true,
+  "conservativeCollapse": true,
+  "removeComments": true,
+  "decodeEntities": true,
+  "fileExt": "html"
+}

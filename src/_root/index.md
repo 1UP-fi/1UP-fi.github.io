@@ -3,7 +3,7 @@ title: "Index"
 permalink: /
 class: center
 styles:
-    - href: /css/anim.css
+    - href: /styles/anim.css
       media: "(prefers-reduced-motion: no-preference)"
 ---
 ![Logo](logo.svg){: style="height: 8rem; margin: auto;"}

@@ -13,3 +13,9 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
+
+# Node
+node_modules
+
+# Let's see if I regret not including this
+package-lock.json

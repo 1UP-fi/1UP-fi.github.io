@@ -8,6 +8,8 @@ timezone: Europe/Helsinki
 logo: /logo.svg
 permalink: /:title
 
+source: src
+
 collections:
   posts:
     permalink: /:collection/:title
@@ -70,3 +72,13 @@ kramdown:
   footnote_backlink: ^
   footnote_template: "<footer class=\"footnotes\" role=\"doc-endnotes\">\n<ol>\n%s\n</ol>\n</footer>"
   header_links: true
+
+exclude:
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - .github/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
