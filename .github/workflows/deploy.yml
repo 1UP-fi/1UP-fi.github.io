@@ -30,7 +30,7 @@ jobs:
       - name: Build Jekyll
         uses: actions/jekyll-build-pages@v1
 
-      - name: Fix _site Directory Permissions
+      - name: Fix _site directory permissions
         run: sudo chown -R $(whoami):$(whoami) ./_site
 
       - name: Compile Typescript
