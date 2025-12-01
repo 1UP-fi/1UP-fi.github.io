@@ -75,7 +75,6 @@ exclude:
   - package.json
   - package-lock.json
   - tsconfig.json
-  - .github/
   - README.md
   - Gemfile
   - Gemfile.lock
