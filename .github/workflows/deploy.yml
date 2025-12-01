@@ -30,10 +30,13 @@ jobs:
       - name: Build Jekyll
         uses: actions/jekyll-build-pages@v1
 
+      - name: Fix _site Directory Permissions
+        run: sudo chown -R $(whoami):$(whoami) ./_site
+
       - name: Compile Typescript
         run: |
-          npm install
-          sudo npx tsc
+          npm install --save-dev typescript
+          npx tsc
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
