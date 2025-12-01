@@ -31,7 +31,9 @@ jobs:
         uses: actions/jekyll-build-pages@v1
 
       - name: Compile Typescript
-        run: npx tsc
+        run: |
+          npm install
+          npx tsc
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

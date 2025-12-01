@@ -16,3 +16,6 @@ Gemfile.lock
 
 # Node
 node_modules
+
+# Let's see if I regret not including this
+package-lock.json
