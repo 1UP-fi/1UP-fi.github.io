@@ -28,8 +28,6 @@ jobs:
 
       - name: Build Jekyll
         uses: actions/jekyll-build-pages@v1
-        with:
-          source: src
 
       - name: Install deps and build
         run: |

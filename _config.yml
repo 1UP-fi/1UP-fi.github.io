@@ -8,8 +8,6 @@ timezone: Europe/Helsinki
 logo: /logo.svg
 permalink: /:title
 
-source: src
-
 collections:
   posts:
     permalink: /:collection/:title
