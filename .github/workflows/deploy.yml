@@ -1,4 +1,4 @@
-name: Jekyll deploy TS in-place
+name: Deploy
 
 on:
   push:
