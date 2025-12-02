@@ -1,6 +1,8 @@
 {
     "files.associations": {
-        "splashes.yml": "markdown"
+        "splashes.yml": "markdown",
+        "splashes.txt": "liquid",
+        "*.html": "liquid"
     },
     "files.exclude": {
         "**/.git": true,
