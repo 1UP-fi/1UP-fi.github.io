@@ -1,5 +1,10 @@
 {
     "files.associations": {
         "splashes.yml": "markdown"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        ".sass-cache": true,
+        "node_modules": true
     }
 }

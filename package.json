@@ -1,6 +1,7 @@
 {
     "private": true,
     "license": "UNLICENSED",
+    "packageManager": "npm@11.6.4",
     "scripts": {
         "build": "tsc",
         "deploy": "npm run build && npm run minify",
