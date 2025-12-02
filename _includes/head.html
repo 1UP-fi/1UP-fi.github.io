@@ -1,6 +1,5 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'self'; font-src 'self'; style-src 'self' 'unsafe-inline';">
 {% seo %}
 <meta property="og:logo" content="{{ site.url }}/logo.svg" />
 <link rel="icon" type="image/svg+xml" sizes="any" href="/logo.svg">
@@ -21,8 +20,5 @@
         <link rel="stylesheet" href="{{ style.href }}"{% if style.media %} media="{{ style.media }}"{% endif %}>
     {% endfor %}
 {% endif %}
-<link rel="prerender" href="/">
-<link rel="prerender" href="/about">
-<link rel="prerender" href="/posts">
 <link rel="preload" href="/splashes.txt" as="fetch" type="text/plain" crossorigin="anonymous">
 <meta name="theme-color" content="#00CC99">
