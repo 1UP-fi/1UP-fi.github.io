@@ -16,3 +16,6 @@ Gemfile.lock
 
 # Node
 node_modules
+
+# Temp folder
+_temp
