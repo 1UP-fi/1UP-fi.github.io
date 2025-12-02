@@ -18,24 +18,18 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Configure GitHub Pages Environment
+        uses: actions/configure-pages@v5
+
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: latest
 
-      - name: Configure GitHub Pages Environment
-        uses: actions/configure-pages@v5
-
-      - name: Build Jekyll Site
-        uses: actions/jekyll-build-pages@v1
-
-      - name: Fix _site Directory Permissions
-        run: sudo chown -R $(whoami):$(whoami) ./_site
-
       - name: Install and Run Node Deployment Scripts
         run: |
           npm install
-          npm run deploy
+          npm run build
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
