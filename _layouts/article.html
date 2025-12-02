@@ -25,12 +25,12 @@ styles:
         <h2>Contents</h2>
         <a href="#">(Top)</a>
         {% include toc.html html=content ordered=true %}
-        {% if footer %}
+        {% if footer != "" %}
         <a href="#footnotes">Footnotes</a>
         {% endif %}
     </nav>
     <main>{{ content }}</main>
-    {% if footer %}
+    {% if footer != "" %}
     <footer>
         <h2 id="footnotes">Footnotes</h2>
         {{ footer }}
