@@ -33,15 +33,15 @@ jobs:
       - name: Fix _site directory permissions
         run: sudo chown -R $(whoami):$(whoami) ./_site
 
-      - name: Compile Typescript
+      - name: Deploy Node
         run: |
-          npm install --save-dev typescript
-          npx tsc
+          npm install
+          npm run deploy
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './_site' 
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

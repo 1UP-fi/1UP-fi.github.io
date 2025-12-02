@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "tsc",
+        "deploy": "npm run build && npm run minify",
+        "dev": "bundle exec jekyll build && npm run build && bundle exec jekyll serve --skip-initial-build --no-watch",
+        "minify": "./minify.sh"
+    },
+    "devDependencies": {
+        "html-minifier-next": "^4.6.1",
+        "terser": "^5.44.1",
+        "typescript": "^5.9.3"
+    }
+}
+
