@@ -68,7 +68,6 @@ titles_from_headings:
 
 kramdown:
   footnote_backlink: ^
-  footnote_template: "<footer class=\"footnotes\" role=\"doc-endnotes\">\n<ol>\n%s\n</ol>\n</footer>"
   header_links: true
 
 exclude:
