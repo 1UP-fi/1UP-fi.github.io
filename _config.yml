@@ -68,7 +68,6 @@ titles_from_headings:
 
 kramdown:
   footnote_backlink: ^
-  header_links: true
 
 exclude:
   - package.json
