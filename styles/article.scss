@@ -13,12 +13,10 @@ article>nav {
     background: var(--panel);
     grid-column: breakout;
     padding-bottom: 1rlh;
-    
-    li {
-        margin-top: .5lh;
-    }
 
     a {
+        display: block;
+        margin-top: .5lh;
         text-decoration: none;
     }
 
