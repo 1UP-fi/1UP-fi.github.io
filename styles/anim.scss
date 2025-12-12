@@ -1,6 +1,6 @@
 ---
 ---
-main img {
+main svg {
     animation: flip 1s ease;
 }
 
@@ -12,11 +12,11 @@ h1::after {
 @keyframes blink {
     25% {
         background-color: var(--bg);
-        color: var(--accent);
+        color: var(--heading);
     }
 
     75% {
-        background-color: var(--accent);
+        background-color: var(--heading);
         color: var(--bg);
     }
 }

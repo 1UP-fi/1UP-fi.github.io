@@ -9,6 +9,10 @@ article>header>h1 {
     margin-bottom: 0.1lh;
 }
 
+article>header address {
+    display: inline;
+}
+
 article>nav {
     background: var(--panel);
     grid-column: breakout;

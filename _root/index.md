@@ -5,8 +5,9 @@ class: center
 styles:
     - href: /styles/anim.css
       media: "(prefers-reduced-motion: no-preference)"
+    - href: /styles/index.css
 ---
-![Logo](logo.svg){: style="height: 8rem; margin: auto;"}
+{% include logo.svg %}
 
 # Welcome to 1UP.fi
 

@@ -5,8 +5,9 @@ baseurl: /
 lang: en-US
 locale: en-US
 timezone: Europe/Helsinki
-logo: /logo.svg
+logo: /favicon.svg
 permalink: /:title
+color: "#00CC99"
 
 collections:
   posts:
@@ -44,6 +45,10 @@ defaults:
       layout: error
       sitemap: false
   - scope:
+      path: styles
+    values:
+      layout: none
+  - scope:
       path: ''
     values:
       layout: default
@@ -61,6 +66,7 @@ plugins:
 
 sass:
   style: compressed
+  sass_dir: styles
 
 titles_from_headings:
   enabled:     true
