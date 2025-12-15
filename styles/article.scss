@@ -1,87 +1,94 @@
 ---
 ---
-article, article>section {
+article {
     display: contents;
     text-align: justify;
 }
 
-article>header>h1 {
-    margin-bottom: 0.1lh;
-}
-
-article>header address {
-    display: inline;
-}
-
-article>nav {
-    background: var(--panel);
-    grid-column: breakout;
-    padding-bottom: 1rlh;
-
-    a {
-        display: block;
-        margin-top: .5lh;
-        text-decoration: none;
+@scope (article) {
+    section {
+        display: contents;
+        text-align: justify;
     }
 
-    a[href="#"] {
-        display: none;
+    header>h1 {
+        margin-bottom: 0.1lh;
     }
 
-    ol {
-        list-style: none;
+    header address {
+        display: inline;
     }
 
-    >ol {
-        padding: 0;
-    }
+    nav {
+        background: var(--panel);
+        grid-column: breakout;
+        padding-bottom: 1rlh;
 
-    >* {
-        margin-inline: var(--gutter);
-    }
-}
-
-@media (min-width: 160ch) {
-    article>nav {
-        grid-column: left;
-        grid-row: 1 / 9999;
-        height: fit-content;
-        justify-self: end;
-        margin-right: var(--gutter);
-        position: sticky;
-        top: 1rlh;
-        min-width: 30ch;
-        width: fit-content;
-        overflow-y: scroll;
-        max-height: 80svh;
+        a {
+            display: block;
+            margin-top: .5lh;
+            text-decoration: none;
+        }
 
         a[href="#"] {
-            display: initial;
+            display: none;
+        }
+
+        ol {
+            list-style: none;
+        }
+
+        >ol {
+            padding: 0;
         }
 
         >* {
-            margin-inline: 1rlh !important;
+            margin-inline: var(--gutter);
         }
     }
-}
 
-.footnote, .footnote:visited, .reversefootnote, .reversefootnote:visited {
-    color: var(--accent);
-    text-decoration: none;
-}
+    @media (min-width: 160ch) {
+        nav {
+            grid-column: left;
+            grid-row: 1 / 9999;
+            height: fit-content;
+            justify-self: end;
+            margin-right: var(--gutter);
+            position: sticky;
+            top: 1rlh;
+            min-width: 30ch;
+            width: fit-content;
+            overflow-y: scroll;
+            max-height: 80svh;
 
-article > footer {
-    dl, dt, dd {
-        display: inline;
+            a[href="#"] {
+                display: initial;
+            }
+
+            >* {
+                margin-inline: 1rlh !important;
+            }
+        }
     }
 
-    > ol {
-        list-style-position: inside;
-        padding: 0;
+    .footnote, .footnote:visited, .reversefootnote, .reversefootnote:visited {
+        color: var(--accent);
+        text-decoration: none;
     }
 
-    li > p {
-        display: inline;
+    footer {
+        dl, dt, dd {
+            display: inline;
+        }
+
+        > ol {
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        li > p {
+            display: inline;
+        }
     }
 }
 

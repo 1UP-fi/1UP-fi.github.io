@@ -1,7 +1,6 @@
 ---
 title: "Index"
 permalink: /
-class: center
 styles:
     - href: /styles/anim.css
       media: "(prefers-reduced-motion: no-preference)"
