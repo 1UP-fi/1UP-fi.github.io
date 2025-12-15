@@ -6,7 +6,7 @@ styles:
       media: "(prefers-reduced-motion: no-preference)"
     - href: /styles/index.css
 ---
-{% include logo.svg %}
+{% include inline-logo.svg %}
 
 # Welcome to 1UP.fi
 

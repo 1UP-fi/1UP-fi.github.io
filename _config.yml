@@ -5,7 +5,7 @@ baseurl: /
 lang: en-US
 locale: en-US
 timezone: Europe/Helsinki
-logo: /favicon.svg
+logo: /logo.svg
 permalink: /:title
 color: "#00CC99"
 
