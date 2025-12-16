@@ -19,4 +19,3 @@ If it's your first time here the [About](/about) page may be a good place to sta
     {{ post.date | date_to_string }}
 </time> - {{ post.title }}]({{ post.url }})
 {% endfor %}
-
