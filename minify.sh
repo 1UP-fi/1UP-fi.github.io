@@ -9,5 +9,5 @@ cp -rf _temp/* _site
 rm -rf _temp
 
 for f in _site/**/*.js; do
-    npx terser $f -c --source-map "content='inline'" -o "$f"
+    npx terser $f -c --source-map "content='inline',url='$(basename "$f.map")'" -o "$f"
 done
