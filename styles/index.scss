@@ -5,6 +5,7 @@ main {
     place-content: center;
 
     svg {
+        stroke: var(--theme);
         height: 8rem;
         margin: auto;
     }

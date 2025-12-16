@@ -5,9 +5,20 @@
 @import "colors";
 
 @layer global {
+    @property --theme {
+        syntax: '<color>';
+        initial-value: {{ site.color }};
+        inherits: true;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        :root {
+            transition: --theme 1s;
+        }
+    }
+
     :root {
         --gutter: 2rem;
-        --theme: {{ site.color }};
         @include colors;
         scrollbar-color: var(--muted) var(--bg);
     }
@@ -23,6 +34,7 @@
             border-top: .1rem solid;
             background: linear-gradient(to top, #0000, var(--panel));
             >a>svg {
+                stroke: var(--theme);
                 margin: auto;
                 height: 4rem;
             }
