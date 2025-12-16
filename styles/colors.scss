@@ -16,18 +16,13 @@
     );
 
     --heading: light-dark(
-        hsl(from var(--theme) h s 40%),
+        hsl(from var(--theme) h s 30%),
         var(--theme)
     );
 
     --muted: light-dark(
         hsl(from var(--theme) h calc(s / 2) 35%),
         hsl(from var(--theme) h s 30%)
-    );
-
-    --panel: light-dark(
-        hsl(from var(--theme) h calc(s / 3) 90%),
-        hsl(from var(--theme) h calc(s / 3) 7%)
     );
 
     color-scheme: light dark;

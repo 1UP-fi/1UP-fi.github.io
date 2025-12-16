@@ -8,7 +8,6 @@ article {
 @scope (article) {
     section {
         display: contents;
-        text-align: justify;
     }
 
     header>h1 {
@@ -20,9 +19,13 @@ article {
     }
 
     nav {
-        background: var(--panel);
+        display: grid;
         grid-column: breakout;
-        padding-bottom: 1rlh;
+        margin-block: 1rlh;
+
+        h2 {
+            margin-block: 0;
+        }
 
         a {
             display: block;
@@ -43,7 +46,7 @@ article {
         }
 
         >* {
-            margin-inline: var(--gutter);
+            grid-column: content;
         }
     }
 
@@ -52,21 +55,15 @@ article {
             grid-column: left;
             grid-row: 1 / 9999;
             height: fit-content;
-            justify-self: end;
-            margin-right: var(--gutter);
             position: sticky;
+            margin-top: 2rlh;
             top: 1rlh;
-            min-width: 30ch;
             width: fit-content;
             overflow-y: scroll;
             max-height: 80svh;
 
             a[href="#"] {
                 display: initial;
-            }
-
-            >* {
-                margin-inline: 1rlh !important;
             }
         }
     }
