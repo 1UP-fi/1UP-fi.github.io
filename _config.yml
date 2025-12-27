@@ -9,6 +9,8 @@ logo: /logo.svg
 permalink: /:title
 color: "#00CC99"
 
+excerpt_separator: <!--endx-->
+
 collections:
   posts:
     permalink: /:collection/:title

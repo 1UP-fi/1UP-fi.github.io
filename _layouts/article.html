@@ -4,9 +4,11 @@ styles:
     - href: /styles/article.css
 ---
 {% assign author = site.data.authors[page.author] %}
-{% assign contents = content | remove_first: page.excerpt | split: '<div class="footnotes" role="doc-endnotes">' %}
-{% assign content = contents[0] %}
-{% assign footer = contents[1] | remove: '</div>' | remove: ' role="doc-endnote"' %}
+{% assign parts = content | split: '<div class="footnotes" role="doc-endnotes">' %}
+{% assign contents = parts[0] | split: site.excerpt_separator %}
+{% assign abstract = contents[0] %}
+{% assign content = contents[1] %}
+{% assign footer = parts[1] | remove: '</div>' | remove: ' role="doc-endnote"' %}
 <article>
     <header>
         <hgroup>
@@ -21,7 +23,7 @@ styles:
                 <a rel="author" href="{{ author.url }}">{{ page.author }}</a>
             </p>
         </hgroup>
-        {{ page.excerpt }}
+        {{ abstract }}
     </header>
     <nav>
         <h2>Contents</h2>
