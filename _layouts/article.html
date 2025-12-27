@@ -9,17 +9,19 @@ styles:
 {% assign footer = contents[1] | remove: '</div>' | remove: ' role="doc-endnote"' %}
 <article>
     <header>
-        <h1>{{ page.title }}</h1>
-        <time datetime="{{ page.date | date_to_xmlschema }}">
-            {{ page.date | date_to_string }}
-        </time>
-        &mdash;
-        <address>
-            <a rel="author" href="{{ author.url }}">{{ page.author }}</a>
-        </address>
-        <p>
-            {{ page.excerpt }}
-        </p>
+        <hgroup>
+            <h1>{{ page.title }}</h1>
+            <p>
+                {{ page.subtitle }}
+                {% if page.subtitle != nil %}&mdash;{% endif %}
+                <time datetime="{{ page.date | date_to_xmlschema }}">
+                    {{ page.date | date_to_string }}
+                </time>
+                &mdash;
+                <a rel="author" href="{{ author.url }}">{{ page.author }}</a>
+            </p>
+        </hgroup>
+        {{ page.excerpt }}
     </header>
     <nav>
         <h2>Contents</h2>
