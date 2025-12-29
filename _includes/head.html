@@ -19,5 +19,15 @@
         <link rel="stylesheet" href="{{ style.href }}"{% if style.media %} media="{{ style.media }}"{% endif %}>
     {% endfor %}
 {% endif %}
+{% if layout.scripts %}
+    {% for script in layout.scripts %}
+        <script src="{{ script.src }}"></script>
+    {% endfor %}
+{% endif %}
+{% if page.scripts %}
+    {% for script in page.scripts %}
+        <script src="{{ script.src }}"></script>
+    {% endfor %}
+{% endif %}
 <link rel="preload" href="/splashes.txt" as="fetch" type="text/plain" crossorigin="anonymous">
 <meta name="theme-color" content="{{ site.color  }}">

@@ -160,14 +160,6 @@
         }
     }
 
-    thead {
-        background: var(--bg);
-    }
-
-    td {
-        background: var(--bg);
-    }
-
     th, td {
         border: 0.1rem solid var(--fg);
         line-height: 1;
@@ -189,5 +181,26 @@
 
     address {
         font-style: normal;
+    }
+
+    table {
+        width: fit-content;
+        place-self: center;
+        margin-bottom: 1lh;
+    }
+
+    thead {
+        color: var(--bg);
+        background: var(--muted);
+    }
+
+    th, td {
+        padding-block: .5lh;
+        padding-inline: min(2em, 5vw);
+        border: none;
+    }
+
+    tr:nth-child(even) td {
+        background: #8884;
     }
 }
