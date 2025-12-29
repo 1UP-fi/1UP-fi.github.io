@@ -141,7 +141,7 @@
         }
 
         &:active, &.current {
-            font-weight: bold;
+            font-weight: 700;
         }
     }
 
@@ -172,7 +172,7 @@
     }
 
     dt {
-        font-weight: bold;
+        font-weight: 700;
 
         &::after {
             content: ": ";
