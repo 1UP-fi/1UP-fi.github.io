@@ -19,3 +19,6 @@ node_modules
 
 # Temp folder
 _temp
+
+# Drafts
+_drafts/*
