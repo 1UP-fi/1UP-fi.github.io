@@ -36,6 +36,12 @@ defaults:
       type: article
       strip_title: true
   - scope:
+      path: _drafts
+    values:
+      layout: article
+      type: article
+      strip_title: true
+  - scope:
       path: _feeds
       type: feeds
     values:

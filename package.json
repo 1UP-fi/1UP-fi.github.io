@@ -5,7 +5,7 @@
     "scripts": {
         "start": "npm run build && npm-run-all -p watch serve",
         "watch": "onchange --exclude-path .gitignore -v . -- npm run build",
-        "build": "bundle exec jekyll build && npm run deploy",
+        "build": "bundle exec jekyll build --drafts && npm run deploy",
         "serve": "bundle exec jekyll serve --skip-initial-build --no-watch --livereload",
         "deploy": "tsc && npm run minify",
         "minify": "./minify.sh"
