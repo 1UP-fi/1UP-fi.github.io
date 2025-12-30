@@ -88,6 +88,14 @@ article {
         text-decoration: none;
     }
 
+    .footnote::before {
+        content: "[";
+    }
+
+    .footnote::after {
+        content: "]";
+    }
+
     footer {
         dl, dt, dd {
             display: inline;
