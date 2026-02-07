@@ -9,8 +9,8 @@ with your aggregator of choice.
 
 {% for post in site.posts %}
 - ## [{{ post.title }}]({{ post.url }})
-  <p>{{ post.date | date_to_string }} - <a href="{{site.data.authors[post.author].url}}">{{post.author}}</a></p>
-  {{post.excerpt}}
+  <p>{{ post.subtitle }} &mdash; {{ post.date | date_to_string }} &mdash; <a href="{{site.data.authors[post.author].url}}">{{post.author}}</a></p>
+  {{post.excerpt | strip_html}}
 {% endfor %}
 {% if site.posts == empty %}
 Nothing here yet!

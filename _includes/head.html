@@ -9,25 +9,16 @@
 <link rel="stylesheet" href="/styles/syntax-dark.css" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="/styles/syntax-light.css" media="(prefers-color-scheme: light)">
 <link rel="stylesheet" href="/styles/print.css" media="print">
-{% if layout.styles %}
-    {% for style in layout.styles %}
-        <link rel="stylesheet" href="{{ style.href }}"{% if style.media %} media="{{ style.media }}"{% endif %}>
-    {% endfor %}
-{% endif %}
-{% if page.styles %}
-    {% for style in page.styles %}
-        <link rel="stylesheet" href="{{ style.href }}"{% if style.media %} media="{{ style.media }}"{% endif %}>
-    {% endfor %}
-{% endif %}
-{% if layout.scripts %}
-    {% for script in layout.scripts %}
-        <script src="{{ script.src }}"></script>
-    {% endfor %}
-{% endif %}
-{% if page.scripts %}
-    {% for script in page.scripts %}
-        <script src="{{ script.src }}"></script>
-    {% endfor %}
-{% endif %}
-<link rel="preload" href="/splashes.txt" as="fetch" type="text/plain" crossorigin="anonymous">
+{% for style in layout.styles %}
+    <link rel="stylesheet" href="{{ style.href }}"{% if style.media %} media="{{ style.media }}"{% endif %}>
+{% endfor %}
+{% for style in page.styles %}
+    <link rel="stylesheet" href="{{ style.href }}"{% if style.media %} media="{{ style.media }}"{% endif %}>
+{% endfor %}
+{% for script in layout.scripts %}
+    <script type="module" src="{{ script.src }}"></script>
+{% endfor %}
+{% for script in page.scripts %}
+    <script type="module" src="{{ script.src }}"></script>
+{% endfor %}
 <meta name="theme-color" content="{{ site.color  }}">

@@ -1,12 +1,12 @@
 <address>Bluesky: <a href="https://bsky.app/profile/1UP.fi">@1UP.fi</a></address>
 <address>Found an issue? <a href="{{ site.github.issues_url }}">Report it on GitHub.</a></address>
 <aside>
-    <q>
+    <q id="splash">
         {% if page.collection == 'errors' %}
         To err is human.
         {% else %}
         <noscript>Keeping it static!</noscript>
-        <script src="/scripts/easter.js"></script>
+        <script type="module" src="/scripts/easter.js"></script>
         {% endif %}
     </q>
     <a rel="license" href="/about#license">

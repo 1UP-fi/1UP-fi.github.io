@@ -1,3 +1,5 @@
+import SPLASHES from "/splashes.json" with { type: "json" };
+
 const CODE : string[] = Array(3).fill(["1","ArrowUp"]).flat();
 let keys : string[] = [];
 
@@ -11,8 +13,6 @@ document.addEventListener('keyup', e=>{
     }
 });
 
-let me = document.currentScript;
-fetch("/splashes.txt").then(r=>r.text()).then(txt=>{
-    let arr = txt.split('\n').filter(s=>s!='');
-    me!.outerHTML = arr[Math.random()*arr.length|0];
-});
+let arr = SPLASHES.filter(s=>s!='');
+let elem = document.getElementById("splash");
+if (elem) elem.innerHTML = arr[Math.random()*arr.length|0];

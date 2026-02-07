@@ -1,4 +1,0 @@
----
-layout: none
----
-{% for s in site.data.splashes %}{{ s | markdownify | replace: "<p>", "" | replace: "</p>", "" }}{% endfor %}
